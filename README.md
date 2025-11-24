@@ -58,8 +58,8 @@ Libraries Used: Only Python standard libraries
 
 ## Steps to Install & Run the Project
 1. Clone the Repository
-git clone https://github.com/YOUR-USERNAME/college-helper
-cd college-helper
+
+https://github.com/vidushikesharwani/College-Helper-Notes-Task-Organizer
 
 2️. Verify Project Files
 
