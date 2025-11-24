@@ -1,19 +1,21 @@
-#College Helper – Notes & Task Organiser
-Project Title
+# College Helper – Notes & Task Organiser
 
-#College Helper – CLI Notes & Task Manager
+## Project Title
 
-Overview of the Project
+# College Helper – CLI Notes & Task Manager
+
+## Overview of the Project
 
 College Helper is a lightweight command-line application designed for students to organise their academic workload efficiently. It enables users to create, view, edit, and delete both notes and tasks from a single interactive terminal menu. The app uses simple file-based storage (like .txt files) to preserve user data across sessions, making it beginner-friendly while providing a complete practical implementation of modular programming.
 
-#Features
+## Features
 
 No Database Required
 All data is stored in simple files, making it portable and easy to run anywhere.
 
-Full CRUD Operations
-Users can:
+# Full CRUD Operations
+
+## Users can:
 1.Add new tasks and notes
 
 2.View all saved data
@@ -54,7 +56,7 @@ Architecture: Modular programming with multiple .py files
 
 Libraries Used: Only Python standard libraries
 
-Steps to Install & Run the Project
+## Steps to Install & Run the Project
 1. Clone the Repository
 git clone https://github.com/YOUR-USERNAME/college-helper
 cd college-helper
@@ -79,13 +81,13 @@ tasks.txt
 
 (If these files don’t exist, the program will create them automatically on first run.)
 
-3️⃣ Run the Application
+3️. Run the Application
 python app.py
 
 
 You will see a menu allowing you to manage notes and tasks interactively.
 
-Instructions for Testing
+## Instructions for Testing
 Test 1 – Adding Data
 
 Select:
