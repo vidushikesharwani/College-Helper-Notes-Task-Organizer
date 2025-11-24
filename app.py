@@ -31,7 +31,7 @@ def save_json(filename, data):
 def add_note():
     title = input("Enter note title: ").strip()
     if title == "":
-        print("Title cannot be empty.")
+        print("Title can 't be empty.")
         return
     body = input("Enter note body: ").strip()
     created = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
@@ -39,7 +39,7 @@ def add_note():
     note = {"id": int(time.time()), "title": title, "body": body, "created": created}
     notes.append(note)
     save_json(NOTES_FILE, notes)
-    print("Note added successfully")
+    print("Note added succesfully")
 
 def view_notes():
     notes = load_json(NOTES_FILE)
@@ -65,11 +65,11 @@ def search_notes():
     if not found:
         print("No notes matched.")
         return
-    print("\n--- Search Results ---")
+    print("\n--Search Results--")
     for n in found:
         print(f"ID: {n['id']} | {n['title']} ({n['created']})")
         print(f"  {n['body']}\n")
-    print("---------------------")
+    print("-----------------")
 
 def delete_note():
     view_notes()
@@ -153,9 +153,9 @@ def delete_task():
         save_json(TASKS_FILE, new)
         print("Task deleted.")
 
-# -----------------------------
-# Simple reports / utils
-# -----------------------------
+
+# Simple reports 
+
 def show_summary():
     notes = load_json(NOTES_FILE)
     tasks = load_json(TASKS_FILE)
@@ -173,7 +173,7 @@ def clear_screen():
 
 def notes_menu():
     while True:
-        print("\n--- NOTES MENU ---")
+        print("\n--NOTES MENU--")
         print("1. Add Note")
         print("2. View Notes")
         print("3. Search Notes")
@@ -217,13 +217,13 @@ def tasks_menu():
 
 def main_menu():
     while True:
-        print("\n================ COLLEGE HELPER ================")
+        print("\n============= COLLEGE HELPER =============")
         print("1. Notes")
         print("2. Tasks")
         print("3. Summary")
         print("4. Clear Screen")
         print("5. Exit")
-        print("===============================================")
+        print("============================================")
         choice = input("Enter option: ").strip()
         if choice == "1":
             notes_menu()
@@ -234,7 +234,7 @@ def main_menu():
         elif choice == "4":
             clear_screen()
         elif choice == "5":
-            print("Good luck with your studies! Bye.")
+            print("Good luck with your studies!  Bye.")
             break
         else:
             print("Invalid option.")
