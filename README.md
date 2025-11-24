@@ -13,6 +13,22 @@ College Helper is a lightweight command-line application designed for students t
 No Database Required
 All data is stored in simple files, making it portable and easy to run anywhere.
 
+##  Features
+
+###  Functional Requirements
+- Add, view, edit, and delete tasks
+- Add and store notes for different subjects
+- Mark tasks as completed
+- Data stored locally in text files (no database required)
+- Easy and fast to use
+
+###  Non-Functional Requirements
+- Minimal UI and simple interaction
+- Runs offline with no additional setup
+- Low system resources required
+- Beginner-friendly code for academic learning use
+
+
 # Full CRUD Operations
 
 ## Users can:
@@ -86,6 +102,32 @@ python app.py
 
 
 You will see a menu allowing you to manage notes and tasks interactively.
+
+
+---
+
+## 📌 How It Works (Code Logic Overview)
+
+### 1️⃣ Data Storage  
+- No SQL or database used.
+- All tasks and notes are saved as **local `.txt` files**.
+- This makes the app easy to run on any system.
+
+### 2️⃣ Application Flow
+- User interacts via a **menu interface**.
+- Based on user selection:
+  - `add_task()` records a new task
+  - `view_tasks()` displays saved tasks
+  - `delete_task()` removes selected items
+  - Similar functions handle notes
+
+### 3️⃣ Error Handling
+`try-except` blocks are used to prevent crashes if:
+- A file doesn’t exist
+- User enters an invalid option
+
+
+
 
 ## Instructions for Testing
 Test 1 – Adding Data
